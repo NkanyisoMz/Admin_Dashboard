@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 110px 1fr;
+    grid-template-areas: 
+    "side header"
+    "side main";
+}
+
+.header {
+    background-color: aliceblue;
+
+    grid-area: header;
+}
+
+.sidebar{
+    background-color: aqua;
+    grid-area: side;
+}
+
+.main{
+    background-color: blueviolet;
+    grid-area: main;
+}
