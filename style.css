@@ -12,6 +12,51 @@ body{
     background-color: aliceblue;
 
     grid-area: header;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: 
+    "search user"
+    "welcome buttons";
+}
+.button{
+    font-size: medium;
+    padding: 5px 10px;
+    margin: 10px;
+    color: white;
+    background-color: blue;
+    border-radius: 8px;
+}
+
+.search{
+    grid-area: search;
+    
+}
+.search input{
+    height: 25px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+.welcome{
+    grid-area: welcome;
+    padding: 10px;
+}
+#user{
+    font-weight: 700;
+    font-size: medium;
+}
+.user-account{
+    grid-area: user;
+    padding: 10px 15px;
+}
+#logged-in{
+    font-size: medium;
+    font-weight: 400;
+}
+.buttons{
+    grid-area: buttons;
+    padding-top: 10px;
 }
 
 .sidebar{
@@ -22,4 +67,78 @@ body{
 .main{
     background-color: blueviolet;
     grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "projects announcement"
+    "projects trending";
+    gap: 10px;
+}
+
+.projects{
+    grid-area: projects;
+    background-color: brown;
+    width: 1fr;
+}
+
+.card-container{
+    display: grid;
+    grid-template-areas: 
+    "c1 c2"
+    "c3 c4"
+    "c5 c6";
+    grid-area: 10px;
+
+}
+
+.project1{
+    grid-area: c1;
+    
+}
+.project2{
+    grid-area: c2;
+    
+}
+.project3{
+    grid-area: c3;
+    
+}
+.project4{
+    grid-area: c4;
+    
+}
+.project5{
+    grid-area: c5;
+    
+}
+.project6{
+    grid-area: c6;
+
+}
+.announcements{
+    grid-area: announcement;
+    background-color: beige;
+    width: 250px;
+}
+.trending{
+    grid-area: trending;
+    background-color: aliceblue;
+    width: 250px;
+}
+
+.side-top{
+    font-size:x-large;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.side-middle{
+    font-size: larger;
+    padding: 20px;
+    margin-bottom: 60px;
+
+}
+
+.side-bottom{
+    font-size: larger;
+    padding: 20px;
 }
