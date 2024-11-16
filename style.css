@@ -29,18 +29,41 @@ body{
 
 .search{
     grid-area: search;
+    padding: 8px;
+    display: grid;
+    grid-template-areas: "c1 c2";
+    grid-template-columns: 5% 95%;
+    
+
     
 }
 .search input{
     height: 25px;
     width: 70%;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 4px;
+
 
 }
+#search-icon{
+    grid-area: c1;
+}
+#input{
+    grid-area: c2;
+}
+
 .welcome{
     grid-area: welcome;
     padding: 10px;
+    display: grid;
+    grid-template-areas: "p1 p2";
+    grid-template-columns: 10% 90%;
+}
+#greeted{
+    grid-area: p1;
+}
+#greet{
+    grid-area: p2;
 }
 #user{
     font-weight: 700;
@@ -49,10 +72,20 @@ body{
 .user-account{
     grid-area: user;
     padding: 10px 15px;
+    display: grid;
+    grid-template-areas: "b1 b2 b3";
+    grid-template-columns: 15% 25% 60%;
+}
+#bell{
+    grid-area: b1;
+}
+#prof{
+    grid-area: b2;
 }
 #logged-in{
     font-size: medium;
     font-weight: 400;
+    grid-area: b3;
 }
 .buttons{
     grid-area: buttons;
@@ -71,13 +104,15 @@ body{
     grid-template-areas: 
     "projects announcement"
     "projects trending";
-    gap: 10px;
+    gap: 40px;
+    grid-template-columns: 70% 30%;
 }
 
 .projects{
     grid-area: projects;
     background-color: brown;
     width: 1fr;
+    margin: 15px 20px;
 }
 
 .card-container{
@@ -86,44 +121,85 @@ body{
     "c1 c2"
     "c3 c4"
     "c5 c6";
-    grid-area: 10px;
+    /*grid-area: 10px;*/
+    gap: 40px;
 
 }
 
-.project1{
+.card{
+    /*width: 200px;*/
+    border: black;
+    padding: 10px;
+    height: 80px;
+    width: auto;
+    margin-bottom: 10px;
+
+    
+}
+
+#project1{
     grid-area: c1;
     
 }
-.project2{
+#project2{
     grid-area: c2;
     
 }
-.project3{
+#project3{
     grid-area: c3;
     
 }
-.project4{
+#project4{
     grid-area: c4;
     
 }
-.project5{
+#project5{
     grid-area: c5;
     
 }
-.project6{
+#project6{
     grid-area: c6;
 
 }
 .announcements{
     grid-area: announcement;
     background-color: beige;
-    width: 250px;
+}
+.announce{
+    padding: 3px 10px;
+    border-radius: 8px;
+    background-color: azure;
 }
 .trending{
     grid-area: trending;
     background-color: aliceblue;
-    width: 250px;
 }
+.person1{
+    display: grid;
+    grid-template-areas: "d1 d2";
+    grid-template-columns: 30% 70%;
+
+}
+.person2{
+    display: grid;
+    grid-template-areas: "d3 d4";
+    grid-template-columns: 30% 70%;
+    
+}
+.person3{
+    display: grid;
+    grid-template-areas: "d5 d6";
+    grid-template-columns: 30% 70%;
+    
+}
+.person4{
+    display: grid;
+    grid-template-areas: "d7 d8";
+    grid-template-columns: 30% 70%;
+    
+}
+
+
 
 .side-top{
     font-size:x-large;

@@ -9,11 +9,18 @@
 <body>
     <header class="header">
 
-        <div class="search"><img><input type="text" placeholder="search"></div>
+        <div class="search"><div id="search-icon"><img src="images/search.svg" 
+            alt="search icon" height="30px" width="30px"></div>
+           <div id="input"><input type="text" placeholder="search"></div></div>
 
-        <div class="user-account"><img><img><span id="logged-in">Morgan Oakley</span></div>
+        <div class="user-account"><div id="bell"><img src="images/bell-ring.svg" 
+            alt="alert icon" height="30px" width="30px"></div>
+            <div id="prof"><img src="images/user2.png" height="30px" width="30px"></div>
+            <div id="logged-in">Morgan Oakley</div></div>
 
-        <div class="welcome"><img><div><span id="greeting">Hi there,</span><br>
+        <div class="welcome"><img id="greeted" src="images/user2.png"
+            alt="user 2 icon" height="40px" width="40px">
+            <div id="greet"><span id="greeting">Hi there,</span><br>
             <span id="user">Morgan Oakley (@Morgan)</span></div></div>
 
         <div class="buttons">
@@ -29,23 +36,45 @@
 
     <section class="sidebar">
         <div class="side-top">
-            <div class="dashboard"><img><a href="">Dashboard</a></div>
+            <div class="dashboard"><img src="images/dashboard.svg"
+                alt="dashboard widget" height="50px" width="50px">
+                <a href="">Dashboard</a></div>
         </div>
 
         <div class="side-middle">
-            <div class="home"><img><a href="">Home</a></div>
-            <div class="profile"><img><a href="">Profile</a></div>
-            <div class="messages"><img><a href="">Messages</a></div>
-            <div class="history"><img><a href="">History</a></div>
-            <div class="tasks"><img><a href="">Tasks</a></div>
-            <div class="messages"><img><a href="">Messages</a></div>
-            <div class="communities"><img><a href="">Communities</a></div>
+            <div class="home"><img src="images/home.svg"
+                alt="home widget" height="30px" width="30px">
+                <a href="">Home</a></div>
+            <div class="profile"><img src="images/profile.svg"
+                alt="profile widget" height="30px" width="30px">
+                <a href="">Profile</a></div>
+            <div class="messages"><img src="images/messages.svg"
+                alt="messages widget" height="30px" width="30px">
+                <a href="">Messages</a></div>
+            <div class="history"><img src="images/history.svg"
+                alt="history widget" height="30px" width="30px">
+                <a href="">History</a></div>
+            <div class="tasks"><img src="images/tasks.svg" 
+                alt="task widget" height="30px" width="30px">
+                <a href="">Tasks</a></div>
+            <div class="messages"><img src="images/messages.svg" 
+                alt="messages widget" height="30px" width="30px">
+                <a href="">Messages</a></div>
+            <div class="communities"><img src="images/community.svg"
+                alt="community widget" height="30px" width="30px">
+                <a href="">Communities</a></div>
         </div>
 
         <div class="side-bottom">
-            <div class="settings"><img><a href="">Settings</a></div>
-            <div class="support"><img><a href="">Support</a></div>
-            <div class="privacy"><img><a href="">Privacy</a></div>
+            <div class="settings"><img src="images/settings.svg"
+                alt="settings widget" height="30px" width="30px">
+                <a href="">Settings</a></div>
+            <div class="support"><img src="images/support.svg"
+                alt="support widget" height="30px" width="30px">
+                <a href="">Support</a></div>
+            <div class="privacy"><img src="images/privacy.svg"
+                alt="privacy icon" height="30px" width="30px">
+                <a href="">Privacy</a></div>
         </div>
 
     </section>
@@ -55,61 +84,94 @@
             <h3>Your Projects</h3>
             <div class="card-container">
 
-                <div class="project1">
+                <div id="project1" class="card">
                     <h3>Super cool protect</h3>
                     <p>sodkngi sidknskn pdsijmksd oidpjp dsoin
                         dsknln dsikm dspogm opdsgj idpfkndfnm 
                         dfjlnkdfn kdfmnfdokm fdkinmfmpoi fdkm
                     </p>
                     <div class="card-actions">
-                        <img><img><img>
+                        <img src="images/star-plus.svg" 
+                        alt="favourite icon" height="30px" width="30px">
+                        <img src="images/eye-plus.svg"
+                        alt="viewed icon" height="30px" width="30px">
+                        <img src="images/fork.svg"
+                        alt="fork icon" height="30px" width="30px">
                     </div>
                 </div>
-                <div class="project2">
+                <div id="project2" class="card">
                     <h3>Less cool protect</h3>
                     <p>sodkngi sidknskn pdsijmksd oidpjp dsoin
                         dsknln dsikm dspogm opdsgj idpfkndfnm 
                         dfjlnkdfn kdfmnfdokm fdkinmfmpoi fdkm
                     </p>
                     <div class="card-actions">
-                        <img><img><img>
+                        <img src="images/star-plus.svg" 
+                        alt="favourite icon" height="30px" width="30px">
+                        <img src="images/eye-plus.svg"
+                        alt="viewed icon" height="30px" width="30px">
+                        <img src="images/fork.svg"
+                        alt="fork icon" height="30px" width="30px">
                     </div>
                 </div>
-                <div class="project3">
+                <div id="project3" class="card">
                     <h3>Impossible App</h3>
                     <p>sodkngi sidknskn pdsijmksd oidpjp dsoin
                         dsknln dsikm dspogm opdsgj idpfkndfnm 
                         dfjlnkdfn kdfmnfdokm fdkinmfmpoi fdkm
                     </p>
                     <div class="card-actions">
-                        <img><img><img>
+                        <img src="images/star-plus.svg" 
+                        alt="favourite icon" height="30px" width="30px">
+                        <img src="images/eye-plus.svg"
+                        alt="viewed icon" height="30px" width="30px">
+                        <img src="images/fork.svg"
+                        alt="fork icon" height="30px" width="30px">
                     </div>
                 </div>
-                <div class="project4">
+                <div id="project4" class="card">
                     <h3>Easy peasy app</h3>
                     <p>sodkngi sidknskn pdsijmksd oidpjp dsoin
                         dsknln dsikm dspogm opdsgj idpfkndfnm 
                         dfjlnkdfn kdfmnfdokm fdkinmfmpoi fdkm
                     </p>
+                    <div class="card-actions">
+                        <img src="images/star-plus.svg" 
+                        alt="favourite icon" height="30px" width="30px">
+                        <img src="images/eye-plus.svg"
+                        alt="viewed icon" height="30px" width="30px">
+                        <img src="images/fork.svg"
+                        alt="fork icon" height="30px" width="30px">
+                    </div>
                 </div>
-                <div class="project5">
+                <div id="project5" class="card">
                     <h3>Ad Blocker</h3>
                     <p>sodkngi sidknskn pdsijmksd oidpjp dsoin
                         dsknln dsikm dspogm opdsgj idpfkndfnm 
                         dfjlnkdfn kdfmnfdokm fdkinmfmpoi fdkm
                     </p>
                     <div class="card-actions">
-                        <img><img><img>
+                        <img src="images/star-plus.svg" 
+                        alt="favourite icon" height="30px" width="30px">
+                        <img src="images/eye-plus.svg"
+                        alt="viewed icon" height="30px" width="30px">
+                        <img src="images/fork.svg"
+                        alt="fork icon" height="30px" width="30px">
                     </div>
                 </div>
-                <div class="project6">
+                <div id="project6" class="card">
                     <h3>Money Maker</h3>
                     <p>sodkngi sidknskn pdsijmksd oidpjp dsoin
                         dsknln dsikm dspogm opdsgj idpfkndfnm 
                         dfjlnkdfn kdfmnfdokm fdkinmfmpoi fdkm
                     </p>
                     <div class="card-actions">
-                        <img><img><img>
+                        <img src="images/star-plus.svg" 
+                        alt="favourite icon" height="30px" width="30px">
+                        <img src="images/eye-plus.svg"
+                        alt="viewed icon" height="30px" width="30px">
+                        <img src="images/fork.svg"
+                        alt="fork icon" height="30px" width="30px">
                     </div>
                 </div>
 
@@ -125,14 +187,14 @@
                         aisjndasu oadujn wajdn kandokn ojndfjnn
                         sjjn ds
                     </p>
-                </div>
+                </div><hr>
                 <div class="Community">
                     <h3>Community share day</h3>
                     <p>jkzcsnlojsiofcjk ioajsikj apoijpsj aopsjfpj
                         isnfimd isdvjkmsd isjdoikm sijpmksd osdkjokm
                         sdkjnkj sdkjn.
                     </p>
-                </div>
+                </div><hr>
                 <div class="policy">
                     <h3>Updated Privacy policy</h3>
                     <p>uisjns sijosdj saiojjnsa iosajfn saoijni
@@ -147,21 +209,29 @@
             <h3>Trending</h3>
             <div class="trenders">
                 <div class="person1">
-                    <img><div><span>@someone</span><br>
+                    <img id="us1" src="images/user1.png"
+                    alt="user 1 profile" height="50px" width="50px">
+                    <div id="acc1"><span>@someone</span><br>
                     <span>world peace bulder</span></div>
 
                 </div>
                 <div class="person2">
-                    <img><div><span>@someone</span><br>
+                    <img id="us2" src="images/hacker.png"
+                    alt="user 2 profile" height="50px" width="50px">
+                    <div id="acc2"><span>@someone</span><br>
                     <span>super cool project</span></div>
 
                 </div>
                 <div class="person3">
-                    <img><div><span>@someone</span><br>
+                    <img id="us3" src="images/user2.png"
+                    alt="user profile" height="50px" width="50px">
+                    <div id="acc3"><span>@someone</span><br>
                     <span>Life changing app</span></div>
                 </div>
                 <div class="person4">
-                    <img><div><span>@someone</span><br>
+                    <img id="us4" src="images/cat.png"
+                    alt="user 3 icon" height="50px" width="50px">
+                    <div id="acc4"><span>@someone</span><br>
                     <span>No traffic maker</span></div>
                 </div>
 
